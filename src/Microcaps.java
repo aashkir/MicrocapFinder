@@ -69,9 +69,9 @@ public class Microcaps extends Application {
 	}
 	
 	class CoinGridPane extends GridPane {
-		ArrayList<Coin> coins;
-		int marketCapLimit = 250000;
-		double pctAvailableLimit = 0.7;
+		private ArrayList<Coin> coins;
+		private int marketCapLimit = 250000;
+		private double pctAvailableLimit = 0.7;
 		
 		// constructor
 		CoinGridPane() {
@@ -222,12 +222,12 @@ public class Microcaps extends Application {
 			this.marketCapLimit = marketCapLimit;
 		}
 		
-		public void setPctAvailableLimit(double pctAvailableLimit) {
-			this.pctAvailableLimit = pctAvailableLimit;
-		}
-		
 		public double getPctAvailableLimit() {
 			return pctAvailableLimit;
+		}
+		
+		public void setPctAvailableLimit(double pctAvailableLimit) {
+			this.pctAvailableLimit = pctAvailableLimit;
 		}
 	}
 }
